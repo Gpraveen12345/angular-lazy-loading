@@ -1,0 +1,12 @@
+
+<div><h1> Create a new employee  <button type="button" class="btn btn-success" (click)="createEmployee()">Create</button></h1></div>
+<form class="form" #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" *ngIf="displayEmployeeForm()">
+  <div *ngFor="let value of employeColumn" class="input">
+    <div style="width: 5rem;display: inline-block;">{{value.toUpperCase()}}:</div>
+      <input name={{value}} type={{inputType[value]}} ngModel>
+  </div>
+  <div class="footer">
+  <button type="button" class="btn btn-danger" style="float:right; margin-left: 10px; margin-right: 10px;" (click)="closeForm()"> Cancel </button>
+  <button type="submit" class="btn btn-success" style="float:right" > Save </button>
+  </div>
+</form>

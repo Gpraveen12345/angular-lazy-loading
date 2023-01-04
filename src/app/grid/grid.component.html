@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let col of employeColumn">{{col.toUpperCase()}}</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of employee">
+        <td *ngFor="let col of employeColumn">{{row[col]}}</td>
+        <td><button type="button" class="btn btn-success" (click)="edit(row['id'])"> Edit </button></td>
+        <td><button type="button" class="btn btn-danger" (click)="delete(row['id'])"> Delete </button></td>
+      </tr>
+    </tbody>
+  </table>
