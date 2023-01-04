@@ -11,7 +11,7 @@ import { GridComponent } from './grid/grid.component';
   declarations: [
     AppComponent,
     EmployedetailsComponent,
-    GridComponent
+    GridComponent,
   ],
   imports: [
     BrowserModule,
