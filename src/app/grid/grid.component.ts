@@ -20,6 +20,7 @@ public edit( id: any) {
   // this.router.navigate([{ outlets: { lazy: ['lazyloading'],side: ['sidebar'] } }]);
   // this.router.navigate([{ outlets: { side: ['sidebar'] } }]);
   this.router.navigate([{ outlets: { lazy: ['lazyloading']}}]);
+  console.log("testing navigate");
 
 }
 public delete( id: any) {

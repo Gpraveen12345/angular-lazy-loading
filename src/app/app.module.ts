@@ -6,17 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployedetailsComponent } from './employedetails/employedetails.component';
 import { GridComponent } from './grid/grid.component';
+import { ModeldialogeComponent } from './modeldialoge/modeldialoge.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployedetailsComponent,
     GridComponent,
+    ModeldialogeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
