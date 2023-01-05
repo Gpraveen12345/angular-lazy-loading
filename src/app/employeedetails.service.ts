@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class EmployeedetailsService {
 public editEmployeId:any=undefined;
-public observable = new BehaviorSubject("initial value");
+public observable = new BehaviorSubject("initialvalue");
 public obs= new Observable((observer)=>{
  
 });
