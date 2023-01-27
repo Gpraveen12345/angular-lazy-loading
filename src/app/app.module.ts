@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,9 +24,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     FormsModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
